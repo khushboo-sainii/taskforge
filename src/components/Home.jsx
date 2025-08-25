@@ -19,7 +19,7 @@ const Home = () => {
     .then(res => setTasks(res.data))
     .catch(err => console.error('Error fetching tasks:', err))
     .finally(() => setLoading(false));
-  }, []);
+  }, [API]);
 
 
   const handleAddTask = (newTask) => {
